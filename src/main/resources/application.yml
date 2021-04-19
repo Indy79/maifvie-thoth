@@ -1,0 +1,14 @@
+server:
+  port: ${SERVER_PORT:9090}
+
+eventsourcing:
+  database:
+    host: ${EVTSOURCING_DB_HOST:localhost}
+    port: ${EVTSOURCING_DB_PORT:5432}
+    name: ${EVTSOURCING_DB_NAME:eventsourcing}
+    credential:
+      username: ${EVTSOURCING_DB_USERNAME:eventsourcing}
+      password: ${EVTSOURCING_DB_PASSWORD:eventsourcing}
+  broker:
+    host: ${EVTSOURCING_BROKER_HOST:localhost}
+    port: ${EVTSOURCING_BROKER_PORT:29092}
